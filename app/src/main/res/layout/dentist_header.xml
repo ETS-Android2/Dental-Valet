@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></View>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/newDarkBlue"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/circle_for_pic"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/dentist_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/dentist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Richard Standwidtch"
+            android:textColor="@color/appWhite"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dentist_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/newBlue"
+            android:text="Dentist"
+            />
+
+        <TextView
+            android:id="@+id/dentist_address"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:textColor="@color/newBlue"
+            android:layout_height="wrap_content"
+            android:text="1245 215 st" />
+
+        <TextView
+            android:id="@+id/dentist_phone"
+            android:textColor="@color/newBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1245210 2451 552" />
+
+        <TextView
+            android:id="@+id/dentist_email"
+            android:textColor="@color/newBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="blavla@gmail.com" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</LinearLayout>

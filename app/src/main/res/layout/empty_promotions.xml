@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newBackGroundColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/dental_valet_header"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/newDarkBlue"
+        android:textColor="@color/appWhite"
+        android:text="@string/promotions"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="100dp"
+        android:layout_gravity="center_vertical"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/appblue"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Watch here for promotions."
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/appblue"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="There are no current promotions avail-"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/appblue"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="able from your dentist"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/notification_refer_button"/>
+
+
+
+</LinearLayout>

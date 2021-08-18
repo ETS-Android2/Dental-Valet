@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard_info_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:id="@+id/reward_image"
+            android:background="@drawable/test_image_promotion"
+            android:layout_height="100dp" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/reward_banner_progress"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/newDarkBlue"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="32dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/reward_title"
+            android:text="GET FREE SCALING"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/appWhite"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/reward_score_required"
+                android:text="52"
+                android:textSize="18sp"
+                android:textColor="@color/appWhite"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=" Points"
+
+                android:textSize="18sp"
+                android:textColor="@color/appWhite"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/appblue"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/appWhite"
+            android:text="Get free quality scanning for free"
+            android:id="@+id/reward_description"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:id="@+id/reward_redeme"
+            android:background="@color/newLightBlue"
+            android:textColor="@color/appWhite"
+            android:text="Redeme"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"></View>
+
+
+</LinearLayout>

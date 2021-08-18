@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newBackGroundColor"
+    android:orientation="vertical">
+
+  <include layout="@layout/dental_valet_header"/>
+
+
+    <include layout="@layout/dentist_header"/>
+    <Button
+        android:layout_width="match_parent"
+        android:text="Available Appointment Slots"
+        android:textColor="@color/appWhite"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp"
+        android:textSize="18sp"
+        android:background="@color/newDarkBlue"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/appointment_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <include layout="@layout/dashboard_button"/>
+
+
+
+</LinearLayout>

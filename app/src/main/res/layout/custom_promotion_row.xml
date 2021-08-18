@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard_info_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:id="@+id/promotion_image"
+            android:background="@drawable/test_image_promotion"
+            android:layout_height="100dp" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/promotion_banner_progress"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/appblue"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="32dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/promotion_title"
+            android:text="NEW BANNERS"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/appWhite"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="$ "
+
+                android:textSize="18sp"
+                android:textColor="@color/appWhite"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/promotion_cost"
+                android:text="52"
+                android:textSize="18sp"
+                android:textColor="@color/appWhite"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:text="New banner description here"
+        android:id="@+id/promotion_description"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_width="120dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/promotion_make_appointment"
+        android:background="@color/newLightBlue"
+        android:textColor="@color/appWhite"
+        android:text="Book Appointment"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></View>
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newBackGroundColor"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appblue"
+            android:textColor="@color/appWhite"
+            android:text="@string/app_bar"
+
+            />
+        <ImageView
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="right"
+
+            android:src="@drawable/back_btn" />
+
+    </FrameLayout>
+
+
+    <!--<ImageView-->
+
+        <!--android:id="@+id/filters"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="16dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:src="@drawable/fileters" />-->
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+    <Button
+
+        android:id="@+id/search_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEARCH FILTERS"
+        android:textColor="@color/appWhite"
+        android:background="@color/newDarkBlue" />
+
+
+</LinearLayout>

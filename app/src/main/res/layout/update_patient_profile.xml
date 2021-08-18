@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newBackGroundColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/dental_valet_header"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/patient_profile_image"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:text="Name"
+
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/patient_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:ems="10"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:text="Email"
+
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/patieint_profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:ems="10"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:text="Address"
+
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/patieint_profile_address"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:ems="10"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:inputType="textPostalAddress"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:text="Phone"
+
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/patieint_profile_phone"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:ems="10"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:inputType="textPhonetic"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:text="Password"
+
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/patieint_profile_password"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:ems="10"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_patient"
+        android:background="@color/newDarkBlue"
+        android:textColor="@color/appWhite"
+        android:text="SUBMIT CHANGES"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+
+
+
+
+</LinearLayout>

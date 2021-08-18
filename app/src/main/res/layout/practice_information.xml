@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+   <include layout="@layout/dental_valet_header"/>
+
+
+    <include layout="@layout/dentist_header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:paddingTop="20dp"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="PRACTICE INFO"
+            android:paddingLeft="20dp"
+            android:layout_gravity="left"
+            android:gravity="left|center"
+            android:textColor="@color/appWhite"
+            android:background="@color/appblue"
+            android:layout_height="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/practice_info_description"
+            android:text="great Team"
+            android:padding="20dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:paddingTop="20dp"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:text="UNIQUE INFORMATION"
+            android:layout_gravity="left"
+            android:gravity="left|center"
+            android:textColor="@color/appWhite"
+            android:background="@color/appblue"
+            android:layout_height="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/unique_info"
+            android:text="Gggggggg"
+            android:padding="20dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:paddingTop="20dp"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="INSURANCE ACCEPTED"
+            android:paddingLeft="20dp"
+            android:layout_gravity="left"
+            android:gravity="left|center"
+            android:textColor="@color/appWhite"
+            android:background="@color/appblue"
+            android:layout_height="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/practice_info_insurance"
+            android:text="Not Selected Yet"
+            android:padding="20dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include layout="@layout/dashboard_button"/>
+
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/newBackGroundColor"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/dental_valet_header" />
+
+
+    <include layout="@layout/dentist_header" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Education"
+        android:textColor="@color/appblack"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="left"
+            android:background="@color/appblue"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:text="DDS, Dentistry"
+            android:textColor="@color/appWhite" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/education_list"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="left"
+            android:background="@color/appblue"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:text="Skills"
+            android:textColor="@color/appWhite" />
+
+        <TextView
+            android:id="@+id/unique_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="This is a skill section of a dentist" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="left"
+            android:background="@color/appblue"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:text="Experience"
+            android:textColor="@color/appWhite" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/experience_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <include layout="@layout/dashboard_button" />
+
+
+
+
+</LinearLayout>

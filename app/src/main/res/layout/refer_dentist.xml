@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newBackGroundColor"
+    android:orientation="vertical">
+
+  <include layout="@layout/dental_valet_header"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/newDarkBlue"
+        android:textColor="@color/appWhite"
+        android:text="@string/refer_dentist"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="email 1"
+            android:paddingLeft="5dp"
+            android:background="#FFFFFF"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:id="@+id/refer_email1"
+            android:layout_height="32dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="email 2"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:id="@+id/refer_email2"
+            android:layout_height="32dp" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:hint="email 3"
+            android:paddingLeft="5dp"
+            android:background="#FFFFFF"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:id="@+id/refer_email3"
+            android:layout_height="32dp" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:hint="email 4"
+            android:background="#FFFFFF"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:id="@+id/refer_email4"
+            android:layout_height="32dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:text="Cancel"
+                android:id="@+id/refer_cancel_btn"
+                android:background="@color/newLightBlue"
+                android:textColor="@color/appWhite"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:text="Refer Dentist"
+                android:background="@color/appblue"
+                android:id="@+id/refer_dentist_btn"
+                android:textColor="@color/appWhite"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Refer dentist to your friends and family and get free reward points"
+            android:textColor="@color/appblack"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/notification_refer_button"/>
+</LinearLayout>

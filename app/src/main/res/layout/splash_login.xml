@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/people_bg"
+android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:paddingBottom="50dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+android:layout_gravity="bottom"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="30dp"
+            android:src="@drawable/dentalvalet_logo" />
+
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/appblue"
+            android:text="LOGIN"
+            android:textSize="18sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/appWhite" />
+
+        <Button
+            android:id="@+id/signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            android:textSize="18sp"
+            android:textColor="@color/appWhite"
+            android:gravity="center"
+            android:background="@color/newLightBlue"
+            android:text="SIGNUP" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/facebook_splash_btn"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            android:textColor="@color/appWhite"
+            android:gravity="center"
+            android:background="@color/newLightBlue"
+            android:text="FACEBOOK"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Welcome" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center" />
+
+
+</LinearLayout>

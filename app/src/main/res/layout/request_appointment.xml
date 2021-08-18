@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/applightgrey"
+    android:orientation="vertical">
+
+    <include layout="@layout/dental_valet_header" />
+
+
+    <include layout="@layout/dentist_header" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="Get Appointment"
+        android:textColor="@color/appWhite"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/newDarkBlue"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/dashboard_info_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Date : "
+                android:textSize="18sp"
+                android:textColor="@color/appblack"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/date"
+                android:textSize="18sp"
+                android:text="2015-12-04"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Time : "
+                android:textSize="20sp"
+                android:textColor="@color/appblack"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/time"
+                android:textSize="20sp"
+                android:text="12:45:00"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/request_service"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_margin="20dp"
+            android:prompt="@string/services"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Description"
+            android:padding="10dp"
+            android:gravity="top|left"
+            android:id="@+id/request_appointment_description"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/appWhite"
+            android:layout_height="60dp" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@color/newLightBlue"
+            android:id="@+id/appointment_request"
+            android:layout_margin="20dp"
+            android:text="@string/requestAppointment"
+            android:textColor="@color/appWhite"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/dashboard_button" />
+
+
+</LinearLayout>

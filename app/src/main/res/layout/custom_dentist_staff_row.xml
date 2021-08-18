@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/appWhite"
+        android:layout_height="8dp"></View>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/blue_red"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="16dp"-->
+
+        <!--android:layout_marginRight="16dp"-->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_for_pic" >
+            <ImageView
+                android:id="@+id/staff_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
+
+
+
+            <TextView
+                android:id="@+id/staff_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scott Thomson"
+                android:textColor="@color/appWhite"
+                android:textSize="22sp"></TextView>
+
+            <TextView
+                android:id="@+id/staff_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Office Manager"
+                android:textColor="@color/appWhite"></TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/appWhite"
+        android:layout_height="8dp"></View>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/staff_description"
+            android:text="Scott is a very good manager"
+            android:textSize="18sp"
+            android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

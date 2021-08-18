@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/filter_screen_black_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/dental_valet_header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/newDarkBlue"
+        android:gravity="top|center"
+
+        android:orientation="vertical">
+
+        <Button
+
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="FIND NEAREST DENTIST"
+            android:textColor="@color/appWhite"
+            android:textSize="18dp"
+
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/newLightBlue" />
+
+        <LinearLayout
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:paddingLeft="20dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:ems="10"
+android:hint="Name"
+                android:inputType="text"
+
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <EditText
+                android:id="@+id/zipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:paddingLeft="20dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:ems="10"
+android:hint="Zip Code"
+                android:inputType="text"
+
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+
+        </LinearLayout>
+
+        <!--<EditText-->
+            <!--android:id="@+id/insurance"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:ems="10"-->
+
+            <!--android:inputType="text"-->
+            <!--android:text="Insurance"-->
+            <!--android:textCursorDrawable="@drawable/color_cursor" />-->
+        <Spinner
+            android:id="@+id/insurance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_margin="20dp"
+            android:prompt="@string/insurance"
+            />
+
+        <!--<EditText-->
+            <!--android:id="@+id/speciality"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:ems="10"-->
+
+            <!--android:inputType="text"-->
+            <!--android:text="Speciality"-->
+            <!--android:textCursorDrawable="@drawable/color_cursor" />-->
+        <Spinner
+            android:id="@+id/speciality"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_margin="20dp"
+            android:prompt="@string/speciality"
+            />
+
+        <Button
+
+
+            android:id="@+id/filter_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+android:text="SEARCH"
+            android:textColor="@color/appWhite"
+            android:background="@color/newLightBlue" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1">-->
+
+
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

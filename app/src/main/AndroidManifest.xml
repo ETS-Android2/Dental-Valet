@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dentalvalet.www.dentalvaletApp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:name="com.dentalvalet.dentalvaletApp.DentalValet.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <!-- Splash screen -->
+        <activity
+
+            android:name="com.dentalvalet.dentalvaletApp.Activities.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.ListDentist"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.SplashLogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.SignUp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.OpeningScreen1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.OpeningScreen2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.OpeningScreen3"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.OpeningScreen4"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.OpeningScreen5"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.SearchDentist"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog">
+
+
+        </activity>
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.PatientDashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.DentistDashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.Promotions"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.PatientProfile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.Services"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.WishList"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.Testimonial"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.Rewards"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.TreatmentPlan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.Appointments"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.ReferDentist"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.ForgotPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.UpdatePatientProfile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.RequestAppointment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.PracticeInformation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.DentistEducation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name="com.dentalvalet.dentalvaletApp.Activities.DentistStaff"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+    </application>
+
+</manifest>

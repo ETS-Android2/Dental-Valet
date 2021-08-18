@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newBackGroundColor"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appblue"
+            android:textColor="@color/appWhite"
+            android:text="@string/app_bar"
+
+            />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/back_btn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="10dp"-->
+
+            <!--android:src="@drawable/back_button" />-->
+        <ImageView
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="right"
+
+            android:src="@drawable/update_profile" />
+
+    </FrameLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/newDarkBlue"
+        android:textColor="@color/appWhite"
+        android:text="@string/patient_profile"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:paddingBottom="20dp"
+            android:visibility="gone"
+            android:id="@+id/patient_profile_image"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:id="@+id/patient_profile_progress"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Mutee113"
+            android:id="@+id/patient_profile_name"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+            android:textColor="@color/appblue"
+            android:textSize="32sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="mutsdsdsdsdee@gmail.com"
+            android:id="@+id/patieint_profile_email"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="131422423"
+            android:id="@+id/patieint_profile_phone"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Gulberg"
+            android:id="@+id/patieint_profile_address"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:background="@color/appWhite"
+        android:layout_gravity="bottom"
+        >
+
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="2dp"-->
+
+
+            <!--android:background="@color/appblue"-->
+            <!--android:text="@string/notifications"-->
+            <!--android:textColor="@color/appWhite" />-->
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/appblue"-->
+            <!--android:text="@string/refer_dentist"-->
+            <!--android:textColor="@color/appWhite" />-->
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+android:id="@+id/patieint_profile_testUpdate"
+            android:background="@color/appblue"
+            android:text="Update Profile"
+            android:textColor="@color/appWhite" />
+
+
+    </LinearLayout>
+
+
+ </LinearLayout>
